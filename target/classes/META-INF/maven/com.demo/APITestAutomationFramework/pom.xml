@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.demo</groupId>
+	<artifactId>APITestAutomationFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>APITestAutomationFramework</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- REST Assured Core -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.3.2</version>
+		</dependency>
+
+		<!-- JSON Path (optional but helpful) -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>4.3.2</version>
+		</dependency>
+
+		<!-- TestNG -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.10.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Jackson for JSON Parsing -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.17.1</version>
+		</dependency>
+
+		<!-- GSON (alternative to Jackson, optional) -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.2</version>
+		</dependency>
+
+
+		<!-- Optional: Allure Reporting for TestNG -->
+		<!--
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.25.0</version>
+        </dependency>
+        -->
+
+		<!-- Apache Commons Lang (optional utilities) -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.14.0</version>
+		</dependency>
+	</dependencies>
+
+</project>
